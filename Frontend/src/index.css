@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+#root {
+    height: 100vh;
+    max-width: 100%;
+    margin: auto;
+}
+
+@media (min-width: 640px) {
+    #root {
+        max-width: 1300px;
+    }
+}
