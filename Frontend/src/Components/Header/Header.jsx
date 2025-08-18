@@ -1,9 +1,9 @@
-import { Nav } from "../Nav/Nav"
+import { NavBurger } from "../NavBurger/NavBurger"
 
 export const Header = () => {
     return (
         <header>
-            <Nav />
+            <NavBurger />
         </header>
     )
 }
