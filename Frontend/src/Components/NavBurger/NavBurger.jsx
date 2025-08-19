@@ -15,7 +15,7 @@ export const NavBurger = () => {
   return (
     <nav className="flex flex-col">
       <div className="flex items-center">
-        <h1 className="my-2 text-3xl font-bold">BAGTANKER</h1>
+        <h1 className="ml-1 my-1 text-3xl font-bold">BAGTANKER</h1>
         <div className="ml-auto">
           <button
             className="flex h-8 w-8"
@@ -30,17 +30,19 @@ export const NavBurger = () => {
         </div>
       </div>
 
-      {/* Mobile */}
       {isOpen && (
         <div className="flex flex-col md:fixed top-0 right-60 w-1/5">
           <ul>
             {navItems.map((item) => (
-              <li key={item.path}>
+              <li 
+                className="p-4 mb-2 w-[128px] bg-red-500 ml-auto" 
+                key={item.path}
+              >
                 <NavLink
                   to={item.path}
                   onClick={() => setIsOpen(false)}
                   className={({ isActive }) =>
-                    `block p-4 my-2 text-center ${
+                    `block text-center ${
                       isActive ? "" : ""
                     }`
                   }
