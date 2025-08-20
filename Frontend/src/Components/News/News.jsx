@@ -12,7 +12,8 @@ export const News = () => {
                         <figure className="my-4" key={index}>
                             <img 
                                 className="" 
-                                src={item.imageUrl} 
+                                src={`http://localhost:3306${item.imageUrl}`}
+                                alt={item.title} 
                             />
                             <figcaption>
                                 <h2 className="font-bold text-l">{item.title}</h2>
