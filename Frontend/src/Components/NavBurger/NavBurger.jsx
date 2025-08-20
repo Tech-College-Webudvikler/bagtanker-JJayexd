@@ -31,11 +31,11 @@ export const NavBurger = () => {
       </div>
 
       {isOpen && (
-        <div className="flex flex-col md:fixed top-0 right-60 w-1/5">
+        <div className="flex flex-col md:fixed top-0 right-60 w-1/5 opacity-90">
           <ul>
             {navItems.map((item) => (
               <li 
-                className="p-4 mb-2 w-[128px] bg-red-500 ml-auto" 
+                className="p-4 mb-2 w-[128px] ml-auto" 
                 key={item.path}
               >
                 <NavLink
