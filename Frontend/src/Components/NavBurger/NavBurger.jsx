@@ -31,18 +31,18 @@ export const NavBurger = () => {
       </div>
 
       {isOpen && (
-        <div className="flex flex-col md:fixed top-0 right-60 w-1/5 opacity-90">
+        <div className="flex flex-col bg-red-500 md:fixed md:top-0 md:right-60 md:w-1/5 opacity-90">
           <ul>
             {navItems.map((item) => (
               <li 
-                className="p-4 mb-2 w-[128px] ml-auto" 
+                className="w-[128px] ml-auto" 
                 key={item.path}
               >
                 <NavLink
                   to={item.path}
                   onClick={() => setIsOpen(false)}
                   className={({ isActive }) =>
-                    `block text-center ${
+                    `block p-2 mb-2 text-center ${
                       isActive ? "" : ""
                     }`
                   }
