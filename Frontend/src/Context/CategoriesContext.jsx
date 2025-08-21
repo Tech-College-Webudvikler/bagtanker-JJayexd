@@ -7,7 +7,7 @@ const CategoryContext = createContext();
 export const CategoryProvider = ({ children }) => {
   const [categories, setCategories] = useState([]);
   const [error, setError] = useState(null);
-
+  
   // Fetch category data
   const getCategories = async () => {
     try {
